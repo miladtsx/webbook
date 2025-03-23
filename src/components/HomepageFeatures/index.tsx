@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -11,38 +11,45 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'AI Codes, You Engineer',
+    Svg: require('@site/static/img/code.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        AI can generate code, but only <strong style={{ color: 'orange' }}>you</strong> can make it reliable, scalable, and secure.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Spot & Fix AI Mistakes',
+    Svg: require('@site/static/img/debug.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn how to <strong style={{ color: 'orange' }}>review, debug, and refine</strong> AI-generated code to avoid common pitfalls.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Think Like an Engineer',
+    Svg: require('@site/static/img/engineering.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Go beyond AI-generated code—apply <strong style={{ color: 'orange' }}>best practices</strong> for maintainability and security.
+      </>
+    ),
+  },
+  {
+    title: 'Practical & Hands-On',
+    Svg: require('@site/static/img/practical.svg').default,
+    description: (
+      <>
+        Get <strong style={{ color: 'orange' }}>real-world examples</strong> and actionable insights, without unnecessary theory.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
